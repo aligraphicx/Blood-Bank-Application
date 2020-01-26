@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/donorProfile"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/avatar"
+        />
+
+    <TextView
+        android:id="@+id/donorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ali Raza"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/donorProfile"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/donoBlodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donorName"
+        android:text="O+"
+        android:layout_alignLeft="@id/donorName"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/donoAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donoBlodGroup"
+        android:text="Lahore City"
+        android:layout_alignLeft="@id/donoBlodGroup"
+        android:textSize="20sp"
+        />
+
+
+
+</RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    
+
+
+</RelativeLayout>
